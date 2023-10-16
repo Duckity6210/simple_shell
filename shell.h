@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef SHELL_H
+#define SHELL_H
 
 #include <stdlib.h>
 #include <unistd.h>
@@ -19,6 +19,7 @@
 /* Points to an array of pointers to strings called the "environment" */
 extern char **environ;
 
+
 /**
  * struct data - struct that contains all relevant data on runtime
  * @av: argument vector
@@ -26,10 +27,9 @@ extern char **environ;
  * @args: tokens of the command line
  * @status: last status of the shell
  * @counter: lines counter
- * @_environ: environment variable
+* @_environ: environment variable
  * @pid: process ID of the shell
  */
-
 typedef struct data
 {
 	char **av;
